@@ -8,7 +8,6 @@
  * @category  Horde
  * @copyright 2011-2017 Horde LLC
  * @license   http://www.horde.org/licenses/lgpl21 LGPL 2.1
- * @link      http://pear.horde.org/index.php?package=Service_Gravatar
  * @package   Service_Gravatar
  */
 
@@ -17,7 +16,6 @@
  * @category  Horde
  * @copyright 2011-2017 Horde LLC
  * @license   http://www.horde.org/licenses/lgpl21 LGPL 2.1
- * @link      http://pear.horde.org/index.php?package=Service_Gravatar
  * @package   Service_Gravatar
  */
 class Horde_Service_Gravatar_ServerTest extends Horde_Test_Case
