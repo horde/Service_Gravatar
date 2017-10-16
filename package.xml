@@ -16,7 +16,7 @@
   <email>p@rdus.de</email>
   <active>no</active>
  </lead>
- <date>2016-02-02</date>
+ <date>2017-10-17</date>
  <version>
   <release>1.0.2</release>
   <api>1.0.0</api>
@@ -40,7 +40,6 @@
         <file name="fetch_profile.php" role="doc" />
         <file name="get_profile.php" role="doc" />
        </dir> <!-- /doc/Horde/Service/Gravatar/examples -->
-       <file name="COPYING" role="doc" />
       </dir> <!-- /doc/Horde/Service/Gravatar -->
      </dir> <!-- /doc/Horde/Service -->
     </dir> <!-- /doc/Horde -->
@@ -66,6 +65,7 @@
      </dir> <!-- /test/Horde/Service -->
     </dir> <!-- /test/Horde -->
    </dir> <!-- /test -->
+   <file name="LICENSE" role="doc" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -105,11 +105,11 @@
  </dependencies>
  <phprelease>
   <filelist>
-   <install as="COPYING" name="doc/Horde/Service/Gravatar/COPYING" />
    <install as="examples/fetch_avatar.php" name="doc/Horde/Service/Gravatar/examples/fetch_avatar.php" />
    <install as="examples/fetch_profile.php" name="doc/Horde/Service/Gravatar/examples/fetch_profile.php" />
    <install as="examples/get_profile.php" name="doc/Horde/Service/Gravatar/examples/get_profile.php" />
    <install as="Horde/Service/Gravatar.php" name="lib/Horde/Service/Gravatar.php" />
+   <install as="LICENSE" name="LICENSE" />
    <install as="Horde/Service/Gravatar/AllTests.php" name="test/Horde/Service/Gravatar/AllTests.php" />
    <install as="Horde/Service/Gravatar/bootstrap.php" name="test/Horde/Service/Gravatar/bootstrap.php" />
    <install as="Horde/Service/Gravatar/conf.php.dist" name="test/Horde/Service/Gravatar/conf.php.dist" />
@@ -167,7 +167,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2016-02-02</date>
+   <date>2017-10-17</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * 
