@@ -16,7 +16,7 @@
   <email>p@rdus.de</email>
   <active>no</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-20</date>
  <version>
   <release>1.0.2</release>
   <api>1.0.0</api>
@@ -59,7 +59,6 @@
        <file name="bootstrap.php" role="test" />
        <file name="conf.php.dist" role="test" />
        <file name="GravatarTest.php" role="test" />
-       <file name="phpunit.xml" role="test" />
        <file name="ServerTest.php" role="test" />
       </dir> <!-- /test/Horde/Service/Gravatar -->
      </dir> <!-- /test/Horde/Service -->
@@ -114,7 +113,6 @@
    <install as="Horde/Service/Gravatar/bootstrap.php" name="test/Horde/Service/Gravatar/bootstrap.php" />
    <install as="Horde/Service/Gravatar/conf.php.dist" name="test/Horde/Service/Gravatar/conf.php.dist" />
    <install as="Horde/Service/Gravatar/GravatarTest.php" name="test/Horde/Service/Gravatar/GravatarTest.php" />
-   <install as="Horde/Service/Gravatar/phpunit.xml" name="test/Horde/Service/Gravatar/phpunit.xml" />
    <install as="Horde/Service/Gravatar/ServerTest.php" name="test/Horde/Service/Gravatar/ServerTest.php" />
   </filelist>
  </phprelease>
@@ -167,7 +165,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-10-17</date>
+   <date>2017-10-20</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * 
