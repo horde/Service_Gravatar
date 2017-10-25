@@ -1,5 +1,5 @@
 {
-    "name": "horde/horde-service-gravatar",
+    "name": "horde/service-gravatar",
     "description": "API accessor for gravatar.com",
     "type": "library",
     "homepage": "https://pear.horde.org",
@@ -17,7 +17,7 @@
         }
     ],
     "version": "1.0.2",
-    "time": "2016-02-02",
+    "time": "2017-10-20",
     "repositories": [
         {
             "type": "pear",
@@ -26,11 +26,11 @@
     ],
     "require": {
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Http": "^2@stable",
-        "pear-pear.horde.org/Horde_Url": "^2@stable"
+        "pear-pear.horde.org/Horde_Http": "^2",
+        "pear-pear.horde.org/Horde_Url": "^2"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Test": "^2.1@stable"
+        "pear-pear.horde.org/Horde_Test": "^2.1"
     },
     "replace": {
         "pear-pear.horde.org/Horde_Service_Gravatar": "1.*",
