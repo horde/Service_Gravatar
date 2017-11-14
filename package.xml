@@ -61,7 +61,6 @@
        <file name="bootstrap.php" role="test" />
        <file name="conf.php.dist" role="test" />
        <file name="GravatarTest.php" role="test" />
-       <file name="phpunit.xml" role="test" />
        <file name="ServerTest.php" role="test" />
       </dir> <!-- /test/Horde/Service/Gravatar -->
      </dir> <!-- /test/Horde/Service -->
@@ -116,7 +115,6 @@
    <install as="Horde/Service/Gravatar/bootstrap.php" name="test/Horde/Service/Gravatar/bootstrap.php" />
    <install as="Horde/Service/Gravatar/conf.php.dist" name="test/Horde/Service/Gravatar/conf.php.dist" />
    <install as="Horde/Service/Gravatar/GravatarTest.php" name="test/Horde/Service/Gravatar/GravatarTest.php" />
-   <install as="Horde/Service/Gravatar/phpunit.xml" name="test/Horde/Service/Gravatar/phpunit.xml" />
    <install as="Horde/Service/Gravatar/ServerTest.php" name="test/Horde/Service/Gravatar/ServerTest.php" />
   </filelist>
  </phprelease>
