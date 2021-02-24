@@ -1,7 +1,7 @@
 {
-    "name": "horde/service-gravatar",
+    "name": "horde/service_gravatar",
     "description": "Gravatar client library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org",
     "license": "LGPL-2.1",
     "authors": [
@@ -16,29 +16,29 @@
             "role": "lead"
         }
     ],
-    "version": "1.0.2",
-    "time": "2017-11-11",
+    "version": "2.0.0alpha1",
+    "time": "2021-02-24",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com/"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "*",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Http": "^2",
-        "pear-pear.horde.org/Horde_Url": "^2"
+        "horde/http": "^2",
+        "horde/url": "^2"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Test": "^2.1"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Service_Gravatar": "1.*",
-        "pear-horde/Horde_Service_Gravatar": "1.*"
+        "horde/test": "^2.1"
     },
     "autoload": {
         "psr-0": {
             "Horde_Service_Gravatar": "lib/"
+        },
+        "psr-4": {
+            "Horde\\Service\\Gravatar\\": "src/"
         }
     }
 }
