@@ -10,6 +10,8 @@
  * @license   http://www.horde.org/licenses/lgpl21 LGPL 2.1
  * @package   Service_Gravatar
  */
+namespace Horde\Service\Gravatar;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author    Gunnar Wrobel <wrobel@pardus.de>
@@ -18,8 +20,7 @@
  * @license   http://www.horde.org/licenses/lgpl21 LGPL 2.1
  * @package   Service_Gravatar
  */
-class Horde_Service_Gravatar_GravatarTest
-extends PHPUnit_Framework_TestCase
+class GravatarTest extends TestCase
 {
     public function testReturn()
     {

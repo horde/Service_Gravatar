@@ -10,6 +10,8 @@
  * @license   http://www.horde.org/licenses/lgpl21 LGPL 2.1
  * @package   Service_Gravatar
  */
+namespace Horde\Service\Gravatar;
+use Horde_Test_Case;
 
 /**
  * @author    Gunnar Wrobel <wrobel@pardus.de>
@@ -18,11 +20,11 @@
  * @license   http://www.horde.org/licenses/lgpl21 LGPL 2.1
  * @package   Service_Gravatar
  */
-class Horde_Service_Gravatar_ServerTest extends Horde_Test_Case
+class ServerTest extends Horde_Test_Case
 {
     private $_server;
 
-    public function setUp()
+    public function setUp(): void
     {
         $config = self::getConfig('SERVICE_GRAVATAR_TEST_CONFIG');
         if ($config && !empty($config['service']['gravatar']['server'])) {
