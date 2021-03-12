@@ -12,6 +12,11 @@
  */
 namespace Horde\Service\Gravatar;
 use PHPUnit\Framework\TestCase;
+use \Horde_Service_Gravatar;
+use \Horde_Support_StringStream;
+use \Horde_Http_Response_Mock;
+use \Horde_Http_Request_Mock;
+use \Horde_Http_Client;
 
 /**
  * @author    Gunnar Wrobel <wrobel@pardus.de>
@@ -25,7 +30,7 @@ class GravatarTest extends TestCase
     public function testReturn()
     {
         $g = new Horde_Service_Gravatar();
-        $this->assertInternalType('string', $g->getId('test'));
+        $this->assertIsString($g->getId('test'));
     }
 
     public function testAddress()
@@ -78,6 +83,7 @@ class GravatarTest extends TestCase
      */
     public function testInvalidMail()
     {
+        $this->expectException('InvalidArgumentException');
         $g = new Horde_Service_Gravatar();
         $g->getId(0.0);
     }
