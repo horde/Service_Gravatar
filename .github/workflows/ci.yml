@@ -46,6 +46,7 @@ jobs:
     - name: Setup Github Token as composer credential
       run: composer config -g github-oauth.github.com ${{ secrets.GITHUB_TOKEN }}
     - name: Install horde/test dependency and other dependencies
+    - name: Install horde/test dependency and other dependencies (Redo. Why does it fail so often without?)
       run: |
         ## For unclear reasons, github action fails randomly if we do not install before we require.
         COMPOSER_ROOT_VERSION=dev-FRAMEWORK_6_0 composer install
