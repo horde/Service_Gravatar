@@ -143,12 +143,12 @@ class GravatarTest extends TestCase
 
     private function _getMockedGravatar($response_string)
     {
-        $response = $this->getMock('Horde_Http_Response', array('getBody'));
+        $response = $this->getMockBuilder('Horde_Http_Response')->setMethods(array('getBody'))->getMock();
         $response->expects($this->once())
             ->method('getBody')
             ->will($this->returnValue($response_string));
 
-        $mock = $this->getMock('Horde_Http_Client', array('get'));
+        $mock = $this->getMockBuilder('Horde_Http_Client')->setMethods(array('get'))->getMock();
         $mock->expects($this->once())
             ->method('get')
             ->will($this->returnValue($response));
