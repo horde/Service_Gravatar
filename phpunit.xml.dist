@@ -6,7 +6,7 @@
     </include>
   </coverage>
   <testsuites>
-    <testsuite name="horde/Service_Gravatar">
+    <testsuite name="horde/Service/Gravatar">
       <directory>test</directory>
     </testsuite>
   </testsuites>

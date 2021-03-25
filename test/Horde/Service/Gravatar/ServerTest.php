@@ -11,7 +11,7 @@
  * @package   Service_Gravatar
  */
 namespace Horde\Service\Gravatar;
-use Horde_Test_Case;
+use Horde_Test_Case as TestCase;
 
 /**
  * @author    Gunnar Wrobel <wrobel@pardus.de>
@@ -20,7 +20,7 @@ use Horde_Test_Case;
  * @license   http://www.horde.org/licenses/lgpl21 LGPL 2.1
  * @package   Service_Gravatar
  */
-class ServerTest extends Horde_Test_Case
+class ServerTest extends TestCase
 {
     private $_server;
 
