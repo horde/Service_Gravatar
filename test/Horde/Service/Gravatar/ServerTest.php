@@ -22,7 +22,7 @@ class Horde_Service_Gravatar_ServerTest extends Horde_Test_Case
 {
     private $_server;
 
-    public function setUp()
+    public function setUp(): void
     {
         $config = self::getConfig('SERVICE_GRAVATAR_TEST_CONFIG');
         if ($config && !empty($config['service']['gravatar']['server'])) {

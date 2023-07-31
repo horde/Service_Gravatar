@@ -19,12 +19,12 @@
  * @package   Service_Gravatar
  */
 class Horde_Service_Gravatar_GravatarTest
-extends PHPUnit_Framework_TestCase
+extends Horde_Test_Case
 {
     public function testReturn()
     {
         $g = new Horde_Service_Gravatar();
-        $this->assertInternalType('string', $g->getId('test'));
+        $this->assertIsString($g->getId('test'));
     }
 
     public function testAddress()
@@ -72,11 +72,10 @@ extends PHPUnit_Framework_TestCase
         );
     }
 
-    /**
-     * @expectedException InvalidArgumentException
-     */
     public function testInvalidMail()
     {
+        $this->expectException('InvalidArgumentException');
+
         $g = new Horde_Service_Gravatar();
         $g->getId(0.0);
     }
@@ -136,12 +135,16 @@ extends PHPUnit_Framework_TestCase
 
     private function _getMockedGravatar($response_string)
     {
-        $response = $this->getMock('Horde_Http_Response', array('getBody'));
+        $response = $this->getMockBuilder('Horde_Http_Response')
+                         ->setMethods(array('getBody'))
+                         ->getMock();
         $response->expects($this->once())
             ->method('getBody')
             ->will($this->returnValue($response_string));
 
-        $mock = $this->getMock('Horde_Http_Client', array('get'));
+        $mock = $this->getMockBuilder('Horde_Http_Client')
+                     ->setMethods(array('get'))
+                     ->getMock();
         $mock->expects($this->once())
             ->method('get')
             ->will($this->returnValue($response));
