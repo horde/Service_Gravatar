@@ -16,6 +16,12 @@ nbproject/
 # Ignore ALL config files
 conf.php
 
+# Ignore composer dependencies and cache
+/vendor/
+/composer.lock
+/.phpunit.cache/
+/.phpunit.result.cache
+
 # Ignore testing files
 run-tests.log
 /test/*/*/*.diff
