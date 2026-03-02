@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright 2011-2017 Horde LLC (http://www.horde.org/)
  *
@@ -24,10 +25,10 @@
 class Horde_Service_Gravatar
 {
     /** The default Gravatar base URL */
-    const STANDARD = 'http://www.gravatar.com';
+    public const STANDARD = 'http://www.gravatar.com';
 
     /** The Gravatar base URL in SSL context */
-    const SECURE  = 'https://secure.gravatar.com';
+    public const SECURE  = 'https://secure.gravatar.com';
 
     /**
      * The base Gravatar URL.
@@ -58,8 +59,7 @@ class Horde_Service_Gravatar
     public function __construct(
         $base = self::STANDARD,
         Horde_Http_Client $client = null
-    )
-    {
+    ) {
         $this->_base   = $base;
         if ($client === null) {
             $client = new Horde_Http_Client();

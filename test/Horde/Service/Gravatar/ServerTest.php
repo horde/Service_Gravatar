@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright 2011-2017 Horde LLC (http://www.horde.org/)
  *
@@ -10,7 +11,9 @@
  * @license   http://www.horde.org/licenses/lgpl21 LGPL 2.1
  * @package   Service_Gravatar
  */
+
 namespace Horde\Service\Gravatar;
+
 use Horde_Test_Case as TestCase;
 
 /**

@@ -36,3 +36,7 @@ dependencies:
   optional:
     composer:
       horde/test: ^3
+
+quality:
+  phpstan:
+    level: 3

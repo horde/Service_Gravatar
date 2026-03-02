@@ -36,7 +36,8 @@ class Gravatar implements GravatarInterface
         private readonly ClientInterface $httpClient,
         private readonly RequestFactoryInterface $requestFactory,
         private readonly GravatarConfig $config = new GravatarConfig()
-    ) {}
+    ) {
+    }
 
     // ========================================================================
     // Facade API - Simple string/array interface

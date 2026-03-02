@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright 2011-2017 Horde LLC (http://www.horde.org/)
  *
@@ -10,13 +11,15 @@
  * @license   http://www.horde.org/licenses/lgpl21 LGPL 2.1
  * @package   Service_Gravatar
  */
+
 namespace Horde\Service\Gravatar;
+
 use PHPUnit\Framework\TestCase;
-use \Horde_Service_Gravatar;
-use \Horde_Support_StringStream;
-use \Horde_Http_Response_Mock;
-use \Horde_Http_Request_Mock;
-use \Horde_Http_Client;
+use Horde_Service_Gravatar;
+use Horde_Support_StringStream;
+use Horde_Http_Response_Mock;
+use Horde_Http_Request_Mock;
+use Horde_Http_Client;
 
 /**
  * @author    Gunnar Wrobel <wrobel@pardus.de>
@@ -102,7 +105,8 @@ class GravatarTest extends TestCase
         $g = new Horde_Service_Gravatar();
         $this->assertEquals(
             'http://www.gravatar.com/avatar/0c17bf66e649070167701d2d3cd71711?s=50',
-            $g->getAvatarUrl('test@example.org', 50));
+            $g->getAvatarUrl('test@example.org', 50)
+        );
     }
 
     public function testProfileUrl()

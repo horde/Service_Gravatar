@@ -22,7 +22,8 @@ final readonly class GravatarConfig
     public function __construct(
         public string $baseUrl = 'http://www.gravatar.com',
         public int $timeout = 10
-    ) {}
+    ) {
+    }
 
     /**
      * Standard Gravatar service (HTTP).

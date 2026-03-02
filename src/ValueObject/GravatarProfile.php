@@ -22,7 +22,8 @@ final readonly class GravatarProfile
      */
     public function __construct(
         private array $data
-    ) {}
+    ) {
+    }
 
     /**
      * Get display name from profile.

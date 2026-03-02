@@ -21,7 +21,8 @@ final readonly class AvatarResult
         public string $url,
         public Email $email,
         public AvatarOptions $options
-    ) {}
+    ) {
+    }
 
     /**
      * Get the avatar URL.
