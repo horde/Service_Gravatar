@@ -9,7 +9,6 @@
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
   notes: |+
-    
 2.0.0alpha3:
   api: 2.0.0alpha1
   state:
@@ -40,6 +39,31 @@
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
   notes: ~
+2.0.0-alpha5:
+  api: 2.0.0-alpha5
+  state:
+    release: alpha
+    api: alpha
+  date: 2026-03-07
+  license:
+    identifier: LGPL-2.1-only
+    uri: https://spdx.org/licenses/LGPL-2.1-only.html
+  notes: |-
+    style: apply code style fixes from linter
+    feat(psr4): implement Service_Gravatar with facade + domain pattern
+    Update metadata and workflows for PHP 8 support
+    Add CI job for satis repo update
+    Update bootstrap.php
+    Update ci.yml
+    no errors, ci.yml and bootstrap.php adapted
+    adding ci.yml to branch
+    adjusted ci.yml
+    no errors left, ci and phpdoc.yml added, bootstrap.php corrected
+    no errors left, corrected ci.yml
+    no errors left, added ci.yml & phpdoc.yml
+    WIP two errors left, 'GravatarTest::_getMockedGravatar' still uses getMock() instead of getMockBuilder, getMockBuilder takes only a class as parameter
+    WIP 15 errors left
+    Development mode for Service_Gravatar-2.0.0alpha5
 1.0.1:
   api: 1.0.0
   state:
@@ -51,17 +75,6 @@
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
     [jan] Mark PHP 7 as supported.
-1.0.0:
-  api: 1.0.0
-  state:
-    release: stable
-    api: stable
-  date: 2014-07-01
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First stable release.
 1.0.0alpha1:
   api: 1.0.0alpha1
   state:
@@ -73,3 +86,14 @@
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
     Initial release.
+1.0.0:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2014-07-01
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    First stable release.
